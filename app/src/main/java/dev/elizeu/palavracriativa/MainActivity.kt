@@ -127,7 +127,7 @@ class MainActivity : AppCompatActivity() {
         meuWebView.addJavascriptInterface(WebAppInterface(this), "Android")
 
         // Carregue a URL do seu site.
-        meuWebView.loadUrl("https://stories-versiculos-web.vercel.app/")
+        meuWebView.loadUrl("file:///android_asset/index.html")
     }
 
     inner class WebAppInterface(private val mContext: MainActivity) {
